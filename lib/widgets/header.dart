@@ -1,0 +1,21 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+
+AppBar header(context,
+    {bool isAppTitle = false, String titleText, removeBackButton = false}) {
+  return AppBar(
+    automaticallyImplyLeading: removeBackButton ? false : true,
+    title: Text(
+      isAppTitle ? 'Indian Social Media' : titleText,
+      textAlign: TextAlign.center,
+      style: TextStyle(
+        fontFamily: isAppTitle ? 'Signatra' : '',
+        fontSize: isAppTitle ? 50 : 22,
+        color: Colors.white,
+      ),
+      overflow: TextOverflow.ellipsis,
+    ),
+    centerTitle: true,
+    backgroundColor: Theme.of(context).accentColor,
+  );
+}

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "270102469293",
+    "firebase_url": "https://indian-social-media.firebaseio.com",
+    "project_id": "indian-social-media",
+    "storage_bucket": "indian-social-media.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:270102469293:android:7a3b3dffb31ff5eb7a8424",
+        "android_client_info": {
+          "package_name": "com.psbapplications.indiansocialmedia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "270102469293-2g7qn8k20buo7ef5acs96jc9od1euno5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.psbapplications.indiansocialmedia",
+            "certificate_hash": "fffc6d8bc2708e5df037b0104ab8a153be9487ac"
+          }
+        },
+        {
+          "client_id": "270102469293-jegtgf5irnjo6ruajeiatf6ls0c4tiko.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCySq-45NXybfrpflVBxrsf-DSKwVaOHiI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "270102469293-jegtgf5irnjo6ruajeiatf6ls0c4tiko.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
