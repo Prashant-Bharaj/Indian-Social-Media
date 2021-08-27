@@ -33,7 +33,7 @@ class _SearchState extends State<Search>
 
   AppBar buildSearchField() {
     return AppBar(
-      backgroundColor: Colors.white,
+      // backgroundColor: Colors.white,
       title: TextFormField(
         controller: searchController,
         decoration: InputDecoration(
@@ -134,12 +134,12 @@ class UserResult extends StatelessWidget {
                 backgroundImage: CachedNetworkImageProvider(user.photoUrl),
               ),
               title: Text(
-                user.displayName,
+                user.displayName??"",
                 style:
                     TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
               ),
               subtitle: Text(
-                user.username,
+                user.username??"",
                 style: TextStyle(color: Colors.white),
               ),
             ),

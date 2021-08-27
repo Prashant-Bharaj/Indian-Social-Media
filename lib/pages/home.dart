@@ -189,7 +189,7 @@ class _HomeState extends State<Home> {
       bottomNavigationBar: CupertinoTabBar(
           currentIndex: pageIndex,
           onTap: onTap,
-          activeColor: Theme.of(context).primaryColor,
+          // activeColor: Theme.of(context).primaryColor,
           items: [
             BottomNavigationBarItem(icon: Icon(Icons.whatshot)),
             BottomNavigationBarItem(icon: Icon(Icons.notifications_active)),
@@ -234,7 +234,6 @@ class _HomeState extends State<Home> {
               style: TextStyle(
                 fontFamily: "Signatra",
                 fontSize: 90.0,
-                color: Colors.white,
               ),
             ),
             GestureDetector(

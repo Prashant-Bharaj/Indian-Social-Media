@@ -74,7 +74,7 @@ class _UploadState extends State<Upload>
 
   Container buildSplashScreen() {
     return Container(
-      color: Theme.of(context).accentColor.withOpacity(0.6),
+      // color: Theme.of(context).accentColor.withOpacity(0.6),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
@@ -88,11 +88,9 @@ class _UploadState extends State<Upload>
                 child: Text(
                   "Upload Image",
                   style: TextStyle(
-                    color: Colors.white,
                     fontSize: 22.0,
                   ),
                 ),
-                color: Colors.deepOrange,
                 onPressed: () => selectImage(context)),
           ),
         ],
@@ -166,13 +164,12 @@ class _UploadState extends State<Upload>
   Scaffold buildUploadForm() {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.white70,
+        // backgroundColor: Colors.white70,
         leading: IconButton(
-            icon: Icon(Icons.arrow_back, color: Colors.black),
+            icon: Icon(Icons.arrow_back,),
             onPressed: clearImage),
         title: Text(
           "Caption Post",
-          style: TextStyle(color: Colors.black),
         ),
         actions: [
           FlatButton(
@@ -180,7 +177,7 @@ class _UploadState extends State<Upload>
             child: Text(
               "Post",
               style: TextStyle(
-                color: Colors.blueAccent,
+                // color: Colors.blueAccent,
                 fontWeight: FontWeight.bold,
                 fontSize: 20.0,
               ),
@@ -231,7 +228,7 @@ class _UploadState extends State<Upload>
           ListTile(
             leading: Icon(
               Icons.pin_drop,
-              color: Colors.orange,
+              // color: Colors.orange,
               size: 35.0,
             ),
             title: Container(
@@ -252,16 +249,16 @@ class _UploadState extends State<Upload>
             child: RaisedButton.icon(
               label: Text(
                 "Use Current Location",
-                style: TextStyle(color: Colors.white),
+                // style: TextStyle(color: Colors.white),
               ),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(30.0),
               ),
-              color: Colors.blue,
+              // color: Colors.blue,
               onPressed: getUserLocation,
               icon: Icon(
                 Icons.my_location,
-                color: Colors.white,
+                // color: Colors.white,
               ),
             ),
           ),

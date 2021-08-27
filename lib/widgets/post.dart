@@ -107,19 +107,19 @@ class _PostState extends State<Post> {
         return ListTile(
           leading: CircleAvatar(
             backgroundImage: CachedNetworkImageProvider(user.photoUrl),
-            backgroundColor: Colors.grey,
+            // backgroundColor: Colors.grey,
           ),
           title: GestureDetector(
             onTap: () => showProfile(context, profileId: user.id),
             child: Text(
-              user.username,
+              user.username??"",
               style: TextStyle(
-                color: Colors.black,
+                // color: Colors.black,
                 fontWeight: FontWeight.bold,
               ),
             ),
           ),
-          subtitle: Text(location),
+          subtitle: Text(location??""),
           trailing: isPostOwner
               ? IconButton(
                   onPressed: () => handleDeletePost(context),
@@ -304,7 +304,7 @@ class _PostState extends State<Post> {
               child: Icon(
                 Icons.chat_bubble_outline,
                 size: 28.0,
-                color: Colors.blue,
+                // color: Colors.blue,
               ),
             ),
           ],
@@ -316,7 +316,7 @@ class _PostState extends State<Post> {
               child: Text(
                 "$likeCount likes",
                 style: TextStyle(
-                  color: Colors.black,
+                  // color: Colors.black,
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -331,12 +331,12 @@ class _PostState extends State<Post> {
               child: Text(
                 "$username ",
                 style: TextStyle(
-                  color: Colors.black,
+                  // color: Colors.black,
                   fontWeight: FontWeight.bold,
                 ),
               ),
             ),
-            Expanded(child: Text(description))
+            Expanded(child: Text(description??""))
           ],
         ),
       ],

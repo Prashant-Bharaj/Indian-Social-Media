@@ -284,7 +284,7 @@ class _ProfileState extends State<Profile>
                   alignment: Alignment.centerLeft,
                   padding: EdgeInsets.only(top: 12.0),
                   child: Text(
-                    user.username,
+                    user.username??"",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 16.0,
@@ -295,7 +295,7 @@ class _ProfileState extends State<Profile>
                   alignment: Alignment.centerLeft,
                   padding: EdgeInsets.only(top: 4.0),
                   child: Text(
-                    user.displayName,
+                    user.displayName??"",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                     ),
@@ -305,7 +305,7 @@ class _ProfileState extends State<Profile>
                   alignment: Alignment.centerLeft,
                   padding: EdgeInsets.only(top: 2.0),
                   child: Text(
-                    user.bio,
+                    user.bio??"",
                   ),
                 ),
               ],
@@ -372,15 +372,15 @@ class _ProfileState extends State<Profile>
           onPressed: () => setPostOrientation("grid"),
           icon: Icon(Icons.grid_on),
           color: postOrientation == 'grid'
-              ? Theme.of(context).primaryColor
-              : Colors.grey,
+              ? Theme.of(context).brightness == Brightness.dark? Colors.white : Colors.blueGrey.shade800
+              : Theme.of(context).brightness == Brightness.dark? Colors.blueGrey : Colors.blueGrey.shade200,
         ),
         IconButton(
           onPressed: () => setPostOrientation("list"),
           icon: Icon(Icons.list),
           color: postOrientation == 'list'
-              ? Theme.of(context).primaryColor
-              : Colors.grey,
+              ? Theme.of(context).brightness == Brightness.dark? Colors.white : Colors.blueGrey.shade800
+              : Theme.of(context).brightness == Brightness.dark? Colors.blueGrey : Colors.blueGrey.shade200,
         ),
       ],
     );

@@ -323,7 +323,7 @@ class ActivityFeedItem extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.only(bottom: 2.0),
       child: Container(
-        color: Colors.white54,
+        // color: Colors.white54,
         child: ListTile(
           title: GestureDetector(
             onTap: () => showProfile(context, profileId: userId),
@@ -332,7 +332,7 @@ class ActivityFeedItem extends StatelessWidget {
               text: TextSpan(
                   style: TextStyle(
                     fontSize: 14.0,
-                    color: Colors.black,
+                    // color: Colors.black,
                   ),
                   children: [
                     TextSpan(
