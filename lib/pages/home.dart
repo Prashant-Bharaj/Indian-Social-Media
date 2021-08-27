@@ -217,8 +217,8 @@ class _HomeState extends State<Home> {
             begin: Alignment.topRight,
             end: Alignment.bottomLeft,
             colors: [
-              Theme.of(context).accentColor,
-              Theme.of(context).primaryColor,
+              Colors.blueGrey,
+              Colors.white38,
             ],
           ),
         ),
@@ -238,15 +238,20 @@ class _HomeState extends State<Home> {
             ),
             GestureDetector(
               onTap: login,
-              child: Container(
-                width: 260.0,
-                height: 60.0,
-                decoration: BoxDecoration(
-                  image: DecorationImage(
-                    image: AssetImage(
-                      'assets/images/google_signin_button.png',
+              child: Material(
+                color: Colors.white38,
+                elevation: 2,
+                borderRadius: BorderRadius.circular(5.0),
+                child: Container(
+                  width: 100.0,
+                  height: 100.0,
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: AssetImage(
+                        'assets/images/google_signin_button.png',
+                      ),
+                      fit: BoxFit.cover,
                     ),
-                    fit: BoxFit.cover,
                   ),
                 ),
               ),

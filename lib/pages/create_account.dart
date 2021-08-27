@@ -85,7 +85,7 @@ class _CreateAccountState extends State<CreateAccount> {
                     height: 50,
                     width: 270,
                     decoration: BoxDecoration(
-                      color: Colors.green,
+                      // color: Colors.green,
 //                      color: Colors.blue,
                       borderRadius: BorderRadius.circular(7.0),
                     ),
@@ -94,7 +94,7 @@ class _CreateAccountState extends State<CreateAccount> {
                         'Submit',
                         style: TextStyle(
                           fontSize: 15.0,
-                          color: Colors.white,
+                          // color: Colors.white,
                           fontWeight: FontWeight.bold,
                         ),
                       ),

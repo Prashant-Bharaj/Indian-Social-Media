@@ -337,7 +337,8 @@ class ActivityFeedItem extends StatelessWidget {
                   children: [
                     TextSpan(
                       text: username,
-                      style: TextStyle(fontWeight: FontWeight.bold),
+                      style: TextStyle(color: Theme.of(context).brightness == Brightness.dark ? Colors.white : Colors.black,
+                      fontWeight: FontWeight.bold)
                     ),
                     TextSpan(
                       text: ' $activityItemText',
