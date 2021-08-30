@@ -342,6 +342,7 @@ class ActivityFeedItem extends StatelessWidget {
                     ),
                     TextSpan(
                       text: ' $activityItemText',
+                        style: TextStyle(color: Theme.of(context).brightness == Brightness.dark ? Colors.white : Colors.black),
                     ),
                   ]),
             ),

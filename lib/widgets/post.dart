@@ -317,7 +317,7 @@ class _PostState extends State<Post> {
                 "$likeCount likes",
                 style: TextStyle(
                   // color: Colors.black,
-                  fontWeight: FontWeight.bold,
+                  fontWeight: FontWeight.w600,
                 ),
               ),
             ),
@@ -328,11 +328,12 @@ class _PostState extends State<Post> {
           children: <Widget>[
             Container(
               margin: EdgeInsets.only(left: 20.0),
-              child: Text(
+              child:
+              Text(
                 "$username ",
                 style: TextStyle(
                   // color: Colors.black,
-                  fontWeight: FontWeight.bold,
+                  fontWeight: FontWeight.w600,
                 ),
               ),
             ),
