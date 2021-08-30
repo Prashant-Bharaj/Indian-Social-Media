@@ -18,7 +18,7 @@ Basically I try to clone Instagram. This app has basic funcationalities of Insta
 ## Screenshots 
 
 In Dark Mode<br>
-<img height=600 width=300 src="screenshots/1.jpg">&ensp;&ensp;<img height=600 width=300 src="screenshots/2.jpg">&ensp;&ensp;<img height=600 width=300 src="screenshots/3.jpg">
-In Normal Mode<br>
+<img height=600 width=300 src="screenshots/1.jpg">&ensp;<img height=600 width=300 src="screenshots/2.jpg">&ensp;<img height=600 width=300 src="screenshots/3.jpg">
+<br><br>In Normal Mode<br>
 <img height=600 width=300 src="screenshots/11.jpg">&ensp;&ensp;<img height=600 width=300 src="screenshots/22.jpg">&ensp;&ensp;<img height=600 width=300 src="screenshots/33.jpg">
 -----
