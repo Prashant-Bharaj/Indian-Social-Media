@@ -10,7 +10,7 @@
 Basically I try to clone Instagram. This app has basic funcationalities of Instagram like you can post images, comment on posts, follow others, and few more.
 
 ## How it works?
-* Sign-In is done throught **firebase-authentication**
+* Sign-In is done through **firebase-authentication**
 * Use **Cloud-Firestore** for storing images and comments
 
 
